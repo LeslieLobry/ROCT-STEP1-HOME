@@ -1,0 +1,1 @@
+import "../../app/globals.css"; import Header from "@/components/Header"; import Footer from "@/components/Footer"; export const metadata={title:"ROCT",description:"Site officieux de démo"}; export default function SiteLayout({children}){return(<html lang="fr"><body><Header/><main><div className="container">{children}</div></main><Footer/></body></html>);}

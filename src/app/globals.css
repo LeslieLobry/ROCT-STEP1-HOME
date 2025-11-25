@@ -1,0 +1,9 @@
+:root {
+  --red: #bb262c;
+  --white: #ffffff;
+  --gray: #cfcfcf;
+  --text: #111111;
+
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}

@@ -1,0 +1,1 @@
+'use client';import {useMemo} from 'react';export default function Markdown({source}){const Comp=useMemo(()=>{return new Function(source+'\n return MDXContent;')();},[source]);return <Comp/>;}

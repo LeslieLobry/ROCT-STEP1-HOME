@@ -1,0 +1,25 @@
+.header {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  border-radius: 4px;
+  display: block;
+}
