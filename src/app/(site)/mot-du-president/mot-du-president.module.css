@@ -1,0 +1,218 @@
+.page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #111;
+  padding-bottom: 4rem;
+  font-family: system-ui, sans-serif;
+}
+
+/* HERO ROUGE */
+.hero {
+  background: linear-gradient(120deg, #bb262c, #8b1117);
+  color: #fff;
+  padding: 4rem 6vw 3rem;
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 1rem 0 0.4rem;
+  font-size: clamp(2.4rem, 4vw, 3.3rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Citation */
+.quote {
+  margin-top: 0.8rem;
+  max-width: 650px;
+  font-style: italic;
+}
+
+.quoteAuthor {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+/* STATS */
+.stats {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.statCard {
+  background: #ffffff;
+  color: #111;
+  border-radius: 0.7rem;
+  padding: 0.9rem 1.3rem;
+  min-width: 190px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  border-bottom: 4px solid #bb262c;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #666;
+}
+
+.statValue {
+  margin-top: 0.2rem;
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: #bb262c;
+}
+
+/* LAYOUT */
+.layout {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.4fr);
+  gap: 2rem;
+  padding: 0 6vw;
+}
+
+/* COLONNE PRINCIPALE */
+.columnMain {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-top: 5px solid #bb262c;
+}
+
+.chapo {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
+  color: #8b1117;
+  margin-bottom: 1.2rem;
+}
+
+.columnMain p {
+  line-height: 1.8;
+  margin-bottom: 0.9rem;
+}
+
+/* Signature */
+.signature {
+  margin-top: 1.6rem;
+}
+
+.signatureName {
+  display: block;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.signatureRole {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* ASIDE */
+.columnAside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.asideCard {
+  background: #ffffff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.9rem;
+  border-left: 4px solid #bb262c;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.asideCard h2 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b1117;
+}
+
+.asideCard p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .columnMain {
+    padding: 1.6rem 1.4rem;
+  }
+}
+
+/* --- HERO AVEC PHOTO --- */
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroLeft {
+  flex: 2;
+}
+
+.heroRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.presidentPhotoWrapper {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 6px solid #fff;
+  box-shadow: 0 0 22px rgba(0,0,0,0.25);
+}
+
+.presidentPhoto {
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .heroInner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroRight {
+    margin-top: 1rem;
+  }
+}

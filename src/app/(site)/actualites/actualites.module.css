@@ -1,0 +1,140 @@
+.page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HERO */
+
+.hero {
+  background: linear-gradient(120deg, #bb262c, #8b1117);
+  color: #fff;
+  padding: 3rem 6vw 2.4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.intro {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* LAYOUT */
+
+.layout {
+  max-width: 1100px;
+  margin: 2.4rem auto 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.4fr);
+  gap: 2rem;
+  padding: 0 6vw;
+}
+
+/* COLONNE ACTUS */
+
+.columnMain {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 1.8rem 1.9rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  border-top: 5px solid #bb262c;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #8b1117;
+  margin-bottom: 1rem;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cardTitle {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.chapo {
+  margin: 0 0 0.4rem;
+  color: #444;
+}
+
+.contenu {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* COLONNE FACEBOOK */
+
+.columnAside {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 1.6rem 1.6rem 2rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  border-top: 5px solid #1877f2; /* bleu facebook pour contraster */
+}
+
+.fbText {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .columnAside {
+    order: -1;
+  }
+}

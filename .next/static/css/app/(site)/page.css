@@ -1,0 +1,181 @@
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/Hero.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+.Hero_wrap__lNW_0 {
+  position: relative;
+  background: var(--red);
+  color: var(--white);
+  border-bottom: 3px solid var(--gray);
+  overflow: hidden;
+}
+
+.Hero_inner__M_C9y {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 36px 16px 28px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-gap: 24px;
+  gap: 24px;
+  align-items: center;
+}
+
+.Hero_title__Bn2TU {
+  font-size: 42px;
+  line-height: 1.05;
+  margin: 0 0 8px;
+  letter-spacing: .3px;
+}
+
+.Hero_subtitle__lkRtQ {
+  margin: 0 0 18px;
+  opacity: .95;
+  font-size: 18px;
+}
+
+.Hero_cta__bvnbU {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.Hero_btnPrimary__c_fC7, .Hero_btnGhost__OPtQw {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform .15s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
+}
+
+.Hero_btnPrimary__c_fC7 {
+  background: var(--white);
+  color: var(--red);
+  box-shadow: var(--shadow);
+}
+.Hero_btnPrimary__c_fC7:hover { transform: translateY(-1px); }
+
+.Hero_btnGhost__OPtQw {
+  border: 2px solid rgba(255,255,255,.9);
+  color: var(--white);
+}
+.Hero_btnGhost__OPtQw:hover { background: rgba(255,255,255,.12); }
+
+.Hero_matchCard___wJXu {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: var(--radius);
+  padding: 16px;
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  box-shadow: var(--shadow);
+}
+
+.Hero_matchHead__HVHmG {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px; opacity: .95;
+}
+
+.Hero_teams__BO3ER {
+  display: grid; grid-template-columns: 1fr auto 1fr; grid-gap: 10px; gap: 10px;
+  align-items: center;
+}
+.Hero_team__zPXPm {
+  display: flex; align-items: center; gap: 10px;
+}
+.Hero_badge__RIQsB {
+  width: 34px; height: 34px; border-radius: 50%; background: var(--white);
+  display: grid; place-items: center; overflow: hidden;
+}
+.Hero_vs__jaMQC { opacity: .85; font-weight: 700; }
+
+.Hero_kv__dWs_T {
+  position: absolute; inset: 0;
+  background: radial-gradient(1400px 420px at 20% -10%, rgba(255,255,255,.18), transparent 50%),
+              radial-gradient(1400px 420px at 80% 120%, rgba(0,0,0,.18), transparent 55%);
+  pointer-events: none;
+}
+
+@media (max-width: 900px) {
+  .Hero_inner__M_C9y { grid-template-columns: 1fr; padding: 28px 16px; }
+  .Hero_title__Bn2TU { font-size: 32px; }
+}
+
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/MatchTicker.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.MatchTicker_bar__qhdtS {
+  background: #101010;
+  color: #fff;
+}
+.MatchTicker_inner__uH5m6 {
+  max-width: 1100px; margin: 0 auto; padding: 8px 16px;
+  display: flex; gap: 12px; align-items: center; overflow: hidden;
+}
+.MatchTicker_pill__7nE_F {
+  background: var(--red); color: var(--white);
+  font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px;
+}
+.MatchTicker_tape__kkZBm {
+  display: flex; gap: 18px; white-space: nowrap;
+  animation: MatchTicker_slide__1ygf0 24s linear infinite;
+}
+.MatchTicker_item__7RY_d { opacity: .95; font-size: 14px; }
+.MatchTicker_sep__Yh822 { opacity: .4; margin: 0 4px; }
+
+@keyframes MatchTicker_slide__1ygf0 {
+  0% { transform: translateX(0)}
+  100% { transform: translateX(-50%)}
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/PartnersCarousel.module.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************/
+.PartnersCarousel_wrap__0YeQE {
+  background: #fafafa;
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+.PartnersCarousel_inner__bqMtP {
+  max-width: 1100px; margin: 0 auto; padding: 18px 16px;
+}
+.PartnersCarousel_title__9hV3o { margin: 0 0 12px; font-size: 18px; }
+
+.PartnersCarousel_rail__saqES {
+  display: flex; gap: 28px; align-items: center;
+  overflow: hidden; position: relative;
+}
+.PartnersCarousel_track__ph613 {
+  display: flex; gap: 28px; align-items: center;
+  animation: PartnersCarousel_marquee__9_FuW 30s linear infinite;
+}
+.PartnersCarousel_logo__QyziI {
+  width: 120px; height: 54px; background: white; border: 1px solid var(--gray);
+  border-radius: 10px; display: grid; place-items: center;
+  box-shadow: var(--shadow); padding: 8px;
+}
+.PartnersCarousel_logo__QyziI img { max-width: 100%; max-height: 100%; }
+
+@keyframes PartnersCarousel_marquee__9_FuW {
+  to { transform: translateX(-50%); }
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/SectionTitle.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.SectionTitle_wrap__fgFTj {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 12px; margin: 8px 0 14px;
+}
+.SectionTitle_left__X6fVO { display: flex; align-items: center; gap: 12px; }
+.SectionTitle_dot__HlkSa {
+  width: 10px; height: 10px; border-radius: 50%; background: var(--red);
+  box-shadow: 0 0 0 4px rgba(187,38,44,.15);
+}
+.SectionTitle_title__sEVQb { margin: 0; font-size: 22px; letter-spacing: .2px; }
+.SectionTitle_link__rC9ir { color: var(--red); text-decoration: none; font-weight: 600; }
+.SectionTitle_link__rC9ir:hover { text-decoration: underline; }
+

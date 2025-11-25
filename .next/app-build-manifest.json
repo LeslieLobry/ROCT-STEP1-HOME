@@ -1,10 +1,10 @@
 {
   "pages": {
-    "/(site)/palmares/page": [
+    "/(site)/actualites/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/css/app/(site)/palmares/page.css",
-      "static/chunks/app/(site)/palmares/page.js"
+      "static/css/app/(site)/actualites/page.css",
+      "static/chunks/app/(site)/actualites/page.js"
     ],
     "/(site)/layout": [
       "static/chunks/webpack.js",
@@ -12,22 +12,11 @@
       "static/css/app/(site)/layout.css",
       "static/chunks/app/(site)/layout.js"
     ],
-    "/layout": [
+    "/(site)/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/layout.js"
-    ],
-    "/(site)/historique/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(site)/historique/page.css",
-      "static/chunks/app/(site)/historique/page.js"
-    ],
-    "/(site)/nos-valeurs/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/(site)/nos-valeurs/page.css",
-      "static/chunks/app/(site)/nos-valeurs/page.js"
+      "static/css/app/(site)/page.css",
+      "static/chunks/app/(site)/page.js"
     ],
     "/_not-found/page": [
       "static/chunks/webpack.js",

@@ -20,3 +20,32 @@ model Palmares {
   ordre       Int      @default(0) // pour trier dans une saison
   createdAt   DateTime @default(now())
 }
+model Equipe {
+  id           Int      @id @default(autoincrement())
+  slug         String   @unique            // ex: "ecole-de-rugby"
+  nom          String                    // École de Rugby, Cadets U16…
+  categorie    String?                   // U6 à U14, Seniors, etc.
+  accroche     String?                   // phrase courte
+  contenu      String?                   // texte long (HTML ou Markdown)
+  photoUrl     String?                   // ex: "/images/equipes/ecole-de-rugby.jpg"
+  entrainements String?                  // texte libre : jours/horaires
+  staff        String?                   // texte libre : noms des coachs
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+model Admin {
+  id       Int     @id @default(autoincrement())
+  email    String  @unique
+  password String  // hashé
+  createdAt DateTime @default(now())
+}
+model Actualite {
+  id        Int      @id @default(autoincrement())
+  titre     String
+  slug      String   @unique
+  chapo     String?
+  contenu   String?
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

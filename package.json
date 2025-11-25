@@ -4,19 +4,21 @@
   "scripts": {
     "dev": "next dev -p 3000",
     "build": "next build",
-    "start": "next start -p 3000"
+    "start": "next start -p 3000",
+    "create-admin": "node scripts/create-admin.js"
   },
   "dependencies": {
     "@next/mdx": "^15.0.0",
     "@prisma/client": "^6.19.0",
+    "bcryptjs": "^3.0.3",
     "gray-matter": "^4.0.3",
+    "jsonwebtoken": "^9.0.2",
     "mdx-bundler": "^10.0.2",
     "next": "14.2.15",
     "react": "18.3.1",
     "react-dom": "18.3.1"
   },
   "prisma": {
-  "seed": "node prisma/seed.js"
-}
-
+    "seed": "node prisma/seed.js"
+  }
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function AdminHistoriquePage() {
   const [title, setTitle] = useState("");
@@ -15,9 +16,9 @@ export default function AdminHistoriquePage() {
       try {
         const res = await fetch("/api/historique");
         const data = await res.json();
-        setTitle(data.title);
-        setIntro(data.intro);
-        setBody(data.body);
+        setTitle(data.title || "");
+        setIntro(data.intro || "");
+        setBody(data.body || "");
       } catch {
         setMessage("Erreur de chargement.");
       } finally {
@@ -30,6 +31,7 @@ export default function AdminHistoriquePage() {
   async function handleSubmit(e) {
     e.preventDefault();
     setSaving(true);
+    setMessage("");
 
     try {
       const res = await fetch("/api/historique", {
@@ -39,28 +41,42 @@ export default function AdminHistoriquePage() {
       });
 
       const data = await res.json();
-      if (!res.ok) throw new Error(data.message);
+      if (!res.ok) throw new Error(data.message || "Erreur serveur.");
       setMessage("Contenu mis à jour ✔️");
     } catch (err) {
       setMessage(err.message);
+    } finally {
+      setSaving(false);
     }
-
-    setSaving(false);
   }
 
   if (loading) return <p>Chargement…</p>;
 
   return (
     <main className="admin-container">
+      {/* Bouton retour */}
+      <div style={{ marginBottom: "1rem" }}>
+        <Link href="/admin">
+          <button type="button">← Retour à l’admin</button>
+        </Link>
+      </div>
+
       <h1>Admin – Page Historique</h1>
       {message && <p>{message}</p>}
 
       <form onSubmit={handleSubmit}>
         <label>Titre</label>
-        <input value={title} onChange={(e) => setTitle(e.target.value)} required />
+        <input
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+          required
+        />
 
         <label>Introduction</label>
-        <textarea value={intro} onChange={(e) => setIntro(e.target.value)} />
+        <textarea
+          value={intro}
+          onChange={(e) => setIntro(e.target.value)}
+        />
 
         <label>Contenu HTML</label>
         <textarea

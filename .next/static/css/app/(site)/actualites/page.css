@@ -1,0 +1,145 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/(site)/actualites/actualites.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************/
+.actualites_page__i_bXk {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #111;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* HERO */
+
+.actualites_hero__vwYye {
+  background: linear-gradient(120deg, #bb262c, #8b1117);
+  color: #fff;
+  padding: 3rem 6vw 2.4rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.actualites_heroInner__oc5SX {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.actualites_tag__ejmD4 {
+  display: inline-block;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.15);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.actualites_title__fwYEs {
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.actualites_intro__uAPVh {
+  max-width: 700px;
+  line-height: 1.7;
+}
+
+/* LAYOUT */
+
+.actualites_layout__4sa2u {
+  max-width: 1100px;
+  margin: 2.4rem auto 3rem;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.4fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+  padding: 0 6vw;
+}
+
+/* COLONNE ACTUS */
+
+.actualites_columnMain__M5JfJ {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 1.8rem 1.9rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  border-top: 5px solid #bb262c;
+}
+
+.actualites_sectionTitle___oQ0y {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #8b1117;
+  margin-bottom: 1rem;
+}
+
+.actualites_list__BIhMC {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.actualites_card__OiUHP {
+  border-bottom: 1px solid #eee;
+  padding: 1rem 0;
+}
+
+.actualites_card__OiUHP:last-child {
+  border-bottom: none;
+}
+
+.actualites_date___I61n {
+  font-size: 0.8rem;
+  color: #777;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.actualites_cardTitle__vGiai {
+  margin: 0.2rem 0 0.4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.actualites_chapo__fJLnZ {
+  margin: 0 0 0.4rem;
+  color: #444;
+}
+
+.actualites_contenu__Oqy5W {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* COLONNE FACEBOOK */
+
+.actualites_columnAside__FOG9o {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 1.6rem 1.6rem 2rem;
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+  border-top: 5px solid #1877f2; /* bleu facebook pour contraster */
+}
+
+.actualites_fbText__8GbSU {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+  .actualites_layout__4sa2u {
+    grid-template-columns: 1fr;
+  }
+
+  .actualites_columnAside__FOG9o {
+    order: -1;
+  }
+}
+

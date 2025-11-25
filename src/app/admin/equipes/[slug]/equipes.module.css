@@ -1,0 +1,156 @@
+/* --------- BASE PAGE --------- */
+
+.page {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #111;
+  padding-bottom: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* --------- HERO --------- */
+
+.hero {
+  background: linear-gradient(120deg, #bb262c, #8b1117);
+  color: #ffffff;
+  padding: 3.2rem 6vw 2.6rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.heroInner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.2rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.12);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+  font-size: clamp(2.1rem, 3.8vw, 3rem);
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.category {
+  font-weight: 600;
+  opacity: 0.96;
+}
+
+.acroche {
+  margin-top: 0.8rem;
+  max-width: 680px;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+/* --------- LAYOUT & MAIN CARD --------- */
+
+.layout {
+  max-width: 1100px;
+  margin: 2.4rem auto 0;
+  padding: 0 6vw;
+}
+
+.mainCard {
+  background: #ffffff;
+  border-radius: 1.1rem;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+  border-top: 5px solid #bb262c;
+}
+
+/* --------- PHOTO --------- */
+
+.photoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.4rem;
+}
+
+.photo {
+  max-width: 320px;
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+  border: 4px solid #ffffff;
+}
+
+/* --------- TEXTE --------- */
+
+.text {
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+.text p {
+  margin-bottom: 0.9rem;
+}
+
+/* --------- INFOS ENTRAÎNEMENTS / STAFF --------- */
+
+.infoGrid {
+  margin-top: 1.8rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.2rem;
+}
+
+.infoCard {
+  background: #fafafa;
+  border-radius: 0.9rem;
+  padding: 1rem 1.3rem;
+  border-left: 4px solid #bb262c;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.infoCard h2 {
+  margin: 0 0 0.4rem;
+  font-size: 0.98rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #8b1117;
+}
+
+.infoCard p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* --------- RESPONSIVE --------- */
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 2.5rem 1.5rem 2.2rem;
+  }
+
+  .layout {
+    padding: 0 1.5rem;
+  }
+
+  .mainCard {
+    padding: 1.6rem 1.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .title {
+    letter-spacing: 0.08em;
+  }
+
+  .photo {
+    max-width: 260px;
+  }
+}
