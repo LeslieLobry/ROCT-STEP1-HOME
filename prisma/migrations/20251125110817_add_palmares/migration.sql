@@ -1,0 +1,8 @@
+-- CreateTable
+CREATE TABLE "Palmares" (
+    "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+    "saison" TEXT NOT NULL,
+    "description" TEXT NOT NULL,
+    "ordre" INTEGER NOT NULL DEFAULT 0,
+    "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,106 @@
+/*!*****************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/globals.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************/
+:root {
+  --red: #bb262c;
+  --white: #ffffff;
+  --gray: #cfcfcf;
+  --text: #111111;
+
+  --radius: 14px;
+  --shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/Nav.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+.Nav_nav__BptBv {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.Nav_link__zheGr {
+  color: #bb262c;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-size: 25px;
+}
+
+.Nav_link__zheGr:hover {
+  background-color: var(--white);
+  color: var(--red);
+}
+
+/* Dropdowns (si besoin plus tard) */
+.Nav_dropdown__9_JZu {
+  position: relative;
+}
+
+.Nav_menu__WgZR5 {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  color: var(--red);
+  min-width: 180px;
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  z-index: 5;
+}
+
+.Nav_menu__WgZR5 a {
+  display: block;
+  padding: 8px 12px;
+  color: var(--red);
+  text-decoration: none;
+}
+
+.Nav_menu__WgZR5 a:hover {
+  background: var(--gray);
+}
+
+.Nav_dropdown__9_JZu:hover .Nav_menu__WgZR5 {
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .Nav_nav__BptBv {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/Header.module.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__MvnS2 {
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.Header_inner__ggL_E {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+}
+
+.Header_brand__tPzig {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.Header_logo__j7oID {
+  border-radius: 4px;
+  display: block;
+}
+

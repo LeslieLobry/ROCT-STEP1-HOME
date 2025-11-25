@@ -9,9 +9,9 @@ export default function Nav() {
       <div className={styles.dropdown}>
         <span className={styles.link}>Notre club ▾</span>
         <div className={styles.menu}>
-          <Link href="/notre-club/historique">Historique</Link>
-          <Link href="/notre-club/palmares">Palmarès</Link>
-          <Link href="/notre-club/valeurs">Nos valeurs</Link>
+          <Link href="/historique">Historique</Link>
+          <Link href="/palmares">Palmarès</Link>
+          <Link href="/nos-valeurs">Nos valeurs</Link>
           <Link href="/notre-club/mot-du-president">Mot du président</Link>
         </div>
       </div>

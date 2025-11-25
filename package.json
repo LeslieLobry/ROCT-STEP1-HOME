@@ -7,11 +7,16 @@
     "start": "next start -p 3000"
   },
   "dependencies": {
+    "@next/mdx": "^15.0.0",
+    "@prisma/client": "^6.19.0",
+    "gray-matter": "^4.0.3",
+    "mdx-bundler": "^10.0.2",
     "next": "14.2.15",
     "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "gray-matter": "^4.0.3",
-    "@next/mdx": "^15.0.0",
-    "mdx-bundler": "^10.0.2"
-  }
+    "react-dom": "18.3.1"
+  },
+  "prisma": {
+  "seed": "node prisma/seed.js"
+}
+
 }

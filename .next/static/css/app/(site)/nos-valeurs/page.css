@@ -1,0 +1,177 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/(site)/nos-valeurs/nos-valeurs.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************/
+.nos-valeurs_page__Cp2CG {
+  min-height: 100vh;
+  background: #f4f4f4;
+  color: #111;
+  padding-bottom: 4rem;
+  font-family: system-ui, sans-serif;
+}
+
+/* HERO ROUGE */
+.nos-valeurs_hero__dcFUJ {
+  background: linear-gradient(120deg, #bb262c, #8b1117);
+  color: #fff;
+  padding: 4rem 6vw 3rem;
+}
+
+.nos-valeurs_heroInner__IfmRw {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.nos-valeurs_tag__dCayU {
+  display: inline-block;
+  padding: 0.25rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.nos-valeurs_title__bZLoM {
+  margin: 1rem 0 0.4rem;
+  font-size: clamp(2.4rem, 4vw, 3.3rem);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nos-valeurs_quote__JiDj7 {
+  margin-top: 0.6rem;
+  font-style: italic;
+  max-width: 650px;
+}
+
+.nos-valeurs_quoteAuthor__o4_4U {
+  display: block;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.nos-valeurs_intro__f0AGX {
+  max-width: 720px;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  margin-top: 1.2rem;
+}
+
+/* STATS */
+.nos-valeurs_stats__hKOR5 {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nos-valeurs_statCard__J1jGb {
+  background: #ffffff;
+  color: #111;
+  border-radius: 0.7rem;
+  padding: 0.9rem 1.3rem;
+  min-width: 190px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
+  border-bottom: 4px solid #bb262c;
+}
+
+.nos-valeurs_statLabel__u2ssn {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #666;
+}
+
+.nos-valeurs_statValue__VnNKG {
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #bb262c;
+}
+
+/* LAYOUT */
+.nos-valeurs_layout__Kyh9x {
+  max-width: 1100px;
+  margin: 3rem auto 0;
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1.4fr);
+  grid-gap: 2rem;
+  gap: 2rem;
+  padding: 0 6vw;
+}
+
+/* COLONNE PRINCIPALE */
+.nos-valeurs_columnMain__jTjnL {
+  background: #ffffff;
+  border-radius: 1rem;
+  padding: 2rem 2.2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-top: 5px solid #bb262c;
+}
+
+.nos-valeurs_block__jaUnq + .nos-valeurs_block__jaUnq {
+  margin-top: 1.6rem;
+}
+
+.nos-valeurs_block__jaUnq h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 0.5rem;
+  color: #8b1117;
+}
+
+.nos-valeurs_block__jaUnq p {
+  line-height: 1.7;
+  margin-bottom: 0.7rem;
+}
+
+/* ASIDE */
+.nos-valeurs_columnAside__9F6P0 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+}
+
+.nos-valeurs_asideCard__tQdiw {
+  background: #ffffff;
+  padding: 1.2rem 1.4rem;
+  border-radius: 0.9rem;
+  border-left: 4px solid #bb262c;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.nos-valeurs_asideCard__tQdiw h3 {
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #8b1117;
+}
+
+.nos-valeurs_asideCard__tQdiw p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.nos-valeurs_asideCard__tQdiw ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .nos-valeurs_layout__Kyh9x {
+    grid-template-columns: 1fr;
+  }
+
+  .nos-valeurs_columnMain__jTjnL {
+    padding: 1.6rem 1.4rem;
+  }
+}
+

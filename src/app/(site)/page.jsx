@@ -25,10 +25,20 @@ export default async function Home() {
   ];
 
   const partnerLogos = [
-    "/images/partners/p1.png",
+    "/images/partners/p1.jpg",
     "/images/partners/p2.png",
     "/images/partners/p3.png",
     "/images/partners/p4.png",
+    "/images/partners/p5.png",
+    "/images/partners/p6.webp",
+    "/images/partners/p7.jpg",
+    "/images/partners/p8.png",
+    "/images/partners/p9.jpg",
+    "/images/partners/p10.jpg",
+    "/images/partners/p11.jpg",
+    "/images/partners/p12.jpg",
+
+
   ];
 
   return (

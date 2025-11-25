@@ -1,0 +1,6 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/(site)/historique/page": "app/(site)/historique/page.js",
+  "/(site)/palmares/page": "app/(site)/palmares/page.js",
+  "/(site)/nos-valeurs/page": "app/(site)/nos-valeurs/page.js"
+}
